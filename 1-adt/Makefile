@@ -1,14 +1,14 @@
 all:
-	gcc -std=c11 -g -Wall -I../include src/*.c -o ./mysolution -lm
+	@gcc -std=c11 -g -Wall src/*.c src/*.h -o ./array -lm
 clean:
 	rm ./mysolution
 	@echo Cleanup complete!
 run: all
-	@./mysolution 255 16
+	@./array
 test:
 	python ../scripts/sanitycheck.py 
 mem: 
-	@valgrind mysolution "The value is %B"
+	@valgrind ./array
 install:
 	pip install python-benedict
 submit:

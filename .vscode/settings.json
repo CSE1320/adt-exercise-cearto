@@ -5,6 +5,8 @@
         "string_view": "c",
         "pprint.h": "c",
         "list.h": "c",
-        "vector": "c"
+        "vector": "c",
+        "array.h": "c",
+        "stdio.h": "c"
     }
 }
